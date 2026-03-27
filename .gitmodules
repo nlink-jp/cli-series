@@ -1,0 +1,6 @@
+[submodule "scli"]
+	path = scli
+	url = https://github.com/nlink-jp/scli.git
+[submodule "confl-cli"]
+	path = confl-cli
+	url = https://github.com/nlink-jp/confl-cli.git
