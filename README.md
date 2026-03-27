@@ -10,6 +10,7 @@ This umbrella repository tracks them together as git submodules and hosts shared
 | Tool | Service | Language | Description |
 |------|---------|----------|-------------|
 | [scli](https://github.com/nlink-jp/scli) | Slack | Go | Terminal-based Slack client — read channels, post messages, DMs, search |
+| [md-to-slack](https://github.com/nlink-jp/md-to-slack) | Slack | Go | Markdown → Slack Block Kit JSON filter — pairs with scli |
 | [confl-cli](https://github.com/nlink-jp/confl-cli) | Confluence | Python | Confluence Cloud CLI — list, search, read, and export pages |
 
 ## Design Philosophy
