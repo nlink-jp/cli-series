@@ -7,3 +7,6 @@
 [submodule "md-to-slack"]
 	path = md-to-slack
 	url = git@github.com:nlink-jp/md-to-slack.git
+[submodule "splunk-cli"]
+	path = splunk-cli
+	url = https://github.com/nlink-jp/splunk-cli.git
