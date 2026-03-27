@@ -1,7 +1,11 @@
 # cli-series Conventions
 
-This document defines the conventions shared across all projects in the cli-series.
-New projects must follow these conventions from the start.
+This document defines the conventions specific to the cli-series.
+
+Development policy, authentication, security, versioning, documentation, and
+submodule workflow are defined in the
+[nlink-jp organization conventions](https://github.com/nlink-jp/.github/blob/main/CONVENTIONS.md).
+The rules there apply to all projects in this series.
 
 Each project also maintains its own `CLAUDE.md` for project-specific instructions.
 
@@ -27,26 +31,8 @@ Each project also maintains its own `CLAUDE.md` for project-specific instruction
 - Tools authenticate as the human user who is running them.
 - Never bundle hardcoded credentials or default tokens.
 - Store credentials in the OS keychain, environment variables, or a local config file —
-  in that priority order. See [Authentication](#authentication).
-
----
-
-## Authentication
-
-Credentials must never be stored in source code. Supported mechanisms in priority order:
-
-1. **OS keychain** (recommended for interactive use): store tokens via system keyring APIs.
-2. **Environment variables**: `<SERVICE>_TOKEN`, `<SERVICE>_API_TOKEN`, etc.
-3. **`.env` file** in the working directory (loaded at startup, `.gitignore`d).
-4. **Config file** at `~/.config/<tool>/config.{toml,yaml,json}` (sensitive fields only).
-
-Config files that may contain secrets must warn on insecure permissions
-(`perm & 0077 != 0`):
-
-```
-Warning: config file <path> has permissions <octal>; expected 0600.
-  The file may contain credentials. Run: chmod 600 <path>
-```
+  in that priority order. See the
+  [org-level authentication policy](https://github.com/nlink-jp/.github/blob/main/CONVENTIONS.md#authentication).
 
 ---
 
@@ -148,36 +134,5 @@ LDFLAGS := -ldflags "-X main.version=$(VERSION)"
 5. Create a Git tag (`git tag vX.Y.Z`) and push it.
 6. **Go**: `make build-all` → zip each binary → create GitHub Release → upload zips.
    **Python**: `uv build` → create GitHub Release → upload `.tar.gz` and `.whl` as assets.
-7. Update the `cli-series` umbrella repository:
-   `git submodule update --remote <tool>` → commit the updated submodule pointer.
-
-Breaking changes require a **minor version bump** while the project is in the `0.x` series.
-
----
-
-## CHANGELOG and Versioning
-
-Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) +
-[Semantic Versioning](https://semver.org/).
-
-Section categories: `Added`, `Changed`, `Fixed`, `Removed`, `Security`, `Docs`, `Internal`.
-Prefix breaking changes with **Breaking:**.
-
----
-
-## Documentation Conventions
-
-- Primary documentation in **English**.
-- Japanese translation (`README.ja.md`, `docs/ja/`) maintained in parallel where applicable.
-- `README.md` sections (in order): description → features → installation → configuration →
-  usage → building → documentation links.
-- Stale documentation is a bug.
-
----
-
-## Security
-
-- Config files with credentials must check permissions on load (see [Authentication](#authentication)).
-- Tools that transmit credentials over HTTP (not HTTPS) must warn on stderr.
-- Dependencies must be kept up to date; run `govulncheck` (Go) or `uv audit` (Python)
-  as part of the quality gate.
+7. Update the `cli-series` umbrella repository — see
+   [Working with Submodules](https://github.com/nlink-jp/.github/blob/main/CONVENTIONS.md#working-with-submodules).
