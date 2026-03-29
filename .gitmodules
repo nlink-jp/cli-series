@@ -7,3 +7,6 @@
 [submodule "splunk-cli"]
 	path = splunk-cli
 	url = https://github.com/nlink-jp/splunk-cli.git
+[submodule "gem-cli"]
+	path = gem-cli
+	url = https://github.com/nlink-jp/gem-cli.git

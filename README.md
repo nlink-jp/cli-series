@@ -12,6 +12,7 @@ This umbrella repository tracks them together as git submodules and hosts shared
 | [scli](https://github.com/nlink-jp/scli) | Slack | Go | Terminal-based Slack client — read channels, post messages, DMs, search |
 | [splunk-cli](https://github.com/nlink-jp/splunk-cli) | Splunk | Go | CLI client for the Splunk REST API — run searches, poll jobs, fetch results |
 | [confl-cli](https://github.com/nlink-jp/confl-cli) | Confluence | Python | Confluence Cloud CLI — list, search, read, and export pages |
+| [gem-cli](https://github.com/nlink-jp/gem-cli) | Gemini | Go | Gemini CLI client — multimodal prompts, streaming, grounding, structured output via Vertex AI |
 
 ## Design Philosophy
 
@@ -28,5 +29,5 @@ See [CONVENTIONS.md](CONVENTIONS.md) for coding, documentation, and release stan
 
 1. Create the repository under `nlink-jp/`.
 2. Follow [CONVENTIONS.md](CONVENTIONS.md) from the start.
-3. Add it as a submodule here: `git submodule add git@github.com:nlink-jp/<tool>.git`
+3. Add it as a submodule here: `git submodule add https://github.com/nlink-jp/<tool>.git`
 4. Add a row to the table above.

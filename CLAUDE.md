@@ -18,6 +18,7 @@ Authenticate as the human user, not a bot.
 ```
 cli-series/
 ├── confl-cli/   github.com/nlink-jp/confl-cli   (Python/uv — Confluence Cloud)
+├── gem-cli/     github.com/nlink-jp/gem-cli     (Go — Gemini via Vertex AI)
 ├── scli/        github.com/nlink-jp/scli         (Go — Slack terminal client)
 └── splunk-cli/  github.com/nlink-jp/splunk-cli   (Go — Splunk REST API)
 ```
