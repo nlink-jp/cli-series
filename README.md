@@ -13,6 +13,7 @@ This umbrella repository tracks them together as git submodules and hosts shared
 | [splunk-cli](https://github.com/nlink-jp/splunk-cli) | Splunk | Go | CLI client for the Splunk REST API — run searches, poll jobs, fetch results |
 | [confl-cli](https://github.com/nlink-jp/confl-cli) | Confluence | Python | Confluence Cloud CLI — list, search, read, and export pages |
 | [gem-cli](https://github.com/nlink-jp/gem-cli) | Gemini | Go | Gemini CLI client — multimodal prompts, streaming, grounding, structured output via Vertex AI |
+| [llm-cli](https://github.com/nlink-jp/llm-cli) | Local LLM | Go | CLI client for local LLMs (LM Studio, Ollama) — streaming, batch, multi-image VLM, structured output |
 
 ## Design Philosophy
 
