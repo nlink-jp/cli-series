@@ -1,6 +1,6 @@
 # cli-series
 
-A collection of service-specific CLI clients maintained under the [nlink-jp](https://github.com/nlink-jp) organisation.
+A collection of service-specific CLI clients and CLI agents maintained under the [nlink-jp](https://github.com/nlink-jp) organisation.
 
 Each tool is a standalone project with its own repository, release cycle, and documentation.
 This umbrella repository tracks them together as git submodules and hosts shared conventions.
@@ -14,6 +14,7 @@ This umbrella repository tracks them together as git submodules and hosts shared
 | [confl-cli](https://github.com/nlink-jp/confl-cli) | Confluence | Python | Confluence Cloud CLI — list, search, read, and export pages |
 | [gem-cli](https://github.com/nlink-jp/gem-cli) | Gemini | Go | Gemini CLI client — multimodal prompts, streaming, grounding, structured output via Vertex AI |
 | [llm-cli](https://github.com/nlink-jp/llm-cli) | Local LLM | Go | CLI client for local LLMs (LM Studio, Ollama) — streaming, batch, multi-image VLM, structured output |
+| [gem-agent](https://github.com/nlink-jp/gem-agent) | Vertex AI | Go | Interactive CLI agent runtime — sandboxed file/shell tools, MCP, skills, two-tier auto-approve (interactive and headless `-p`), session resume, context compaction (macOS) |
 
 ## Design Philosophy
 
