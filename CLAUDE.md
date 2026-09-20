@@ -15,14 +15,15 @@
 Pipe-friendly, Unix-composable CLI clients for external services.
 Authenticate as the human user, not a bot.
 
-```
-cli-series/
-├── confl-cli/   github.com/nlink-jp/confl-cli   (Python/uv — Confluence Cloud)
-├── gem-cli/     github.com/nlink-jp/gem-cli     (Go — Gemini via Vertex AI)
-├── llm-cli/     github.com/nlink-jp/llm-cli     (Go — Local LLMs via OpenAI-compatible API)
-├── scli/        github.com/nlink-jp/scli         (Go — Slack terminal client)
-└── splunk-cli/  github.com/nlink-jp/splunk-cli   (Go — Splunk REST API)
-```
+The catalog — one row per submodule — is [README.md](README.md) (ADR-005);
+do not duplicate it here. A second list is a list that drifts: `check-org.sh`
+holds the README to the submodules and nothing held this file, which had
+fallen behind by the time anyone compared them.
+
+Per-tool build quirks:
+
+- **Python/uv (no make):** confl-cli
+- **macOS-only (sandbox-exec), darwin/arm64 asset only:** gem-agent
 
 ## Release checklist
 
