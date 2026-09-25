@@ -23,7 +23,7 @@ fallen behind by the time anyone compared them.
 Per-tool build quirks:
 
 - **Python/uv (no make):** confl-cli
-- **macOS-only (sandbox-exec), darwin/arm64 asset only:** gem-agent
+- **macOS-only (sandbox-exec), darwin/arm64 asset only:** gem-agent, lagent
 
 ## Release checklist
 

@@ -16,3 +16,6 @@
 [submodule "gem-agent"]
 	path = gem-agent
 	url = https://github.com/nlink-jp/gem-agent.git
+[submodule "lagent"]
+	path = lagent
+	url = https://github.com/nlink-jp/lagent.git
