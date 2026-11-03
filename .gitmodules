@@ -10,9 +10,6 @@
 [submodule "gem-cli"]
 	path = gem-cli
 	url = https://github.com/nlink-jp/gem-cli.git
-[submodule "llm-cli"]
-	path = llm-cli
-	url = https://github.com/nlink-jp/llm-cli.git
 [submodule "gem-agent"]
 	path = gem-agent
 	url = https://github.com/nlink-jp/gem-agent.git
