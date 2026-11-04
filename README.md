@@ -12,7 +12,6 @@ This umbrella repository tracks them together as git submodules and hosts shared
 | [scli](https://github.com/nlink-jp/scli) | Slack | Go | Terminal-based Slack client — read channels, post messages, DMs, search |
 | [splunk-cli](https://github.com/nlink-jp/splunk-cli) | Splunk | Go | CLI client for the Splunk REST API — run searches, poll jobs, fetch results |
 | [confl-cli](https://github.com/nlink-jp/confl-cli) | Confluence | Python | Confluence Cloud CLI — list, search, read, and export pages |
-| [gem-cli](https://github.com/nlink-jp/gem-cli) | Gemini | Go | Gemini CLI client — multimodal prompts, streaming, grounding, structured output via Vertex AI |
 | [gem-agent](https://github.com/nlink-jp/gem-agent) | Vertex AI | Go | Interactive CLI agent runtime — sandboxed file/shell tools, MCP, skills, two-tier auto-approve (interactive and headless `-p`), session resume, context compaction (macOS) |
 | [lagent](https://github.com/nlink-jp/lagent) | Local LLM | Go | Interactive CLI agent runtime on a local LLM (LM Studio, mlx-serve, Ollama) for work that should not go to a cloud API — sandboxed file/shell tools, MCP, skills, hooks, memory, operator approval (macOS) |
 
